@@ -1,0 +1,12 @@
+#score-section {
+    font-family: monospace, sans-serif, system-ui, 'Open Sans', 'Helvetica Neue';
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    color: var(--text-muted);
+    user-select: none;
+}
+
+#local-scores, #global-scores {
+    margin-left: 1.75rem;
+    margin-block: 1rem;
+}

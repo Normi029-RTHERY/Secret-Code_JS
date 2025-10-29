@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('../assets/fonts/DS-DIGIT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'digital-7 monospace';
+    src: url('../assets/fonts/digital-7/digital-7-mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

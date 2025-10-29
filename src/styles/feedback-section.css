@@ -1,0 +1,87 @@
+#feedback-section {
+    display: grid;
+    grid-template-columns: repeat(var(--feedback-columns), 1fr);
+    align-items: center;
+    gap: 1ch;
+    font-size: 2rem;
+}
+
+#timer {
+    grid-column: 1 /-1;
+    color: oklch(from var(--color-screen-text) l var(--timer-warning) calc(h + 50));
+    background: var(--color-screen-background);
+    font-family: 'digital-7 monospace';
+    text-align: end;
+    padding: .875rem;
+    box-shadow: var(--shadow-m-inset);
+    border-radius: .5rem;
+
+    &::before {
+        content: '88:88:888';
+        position: absolute;
+        opacity: 0.2;
+    }
+}
+
+.attempt-digit {
+    box-sizing: content-box;
+    position: relative;
+    min-width: 1ch;
+    min-height: 2ch;
+    padding-inline: 0.25ch;
+    margin-bottom: 1.5ch;
+    background-color: var(--color-screen-background);
+    color: var(--color-screen-text);
+    text-align: end;
+    border-radius: 0.25rem;
+    padding: .25rem .5rem;
+    box-shadow: var(--shadow-m-inset);
+
+    &::before {
+        content: '8';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.2;
+    }
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        bottom: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1ch;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 1px solid var(--color-screen-background);
+    }
+}
+
+.unknown {
+    &::after {
+        background-color: var(--color-unknown);
+        /* box-shadow: 0 0 .5rem var(--color-unknown); */
+    }
+}
+
+.correct {
+    &::after {
+        background-color: var(--color-correct);
+        box-shadow: 0 0 .5ch var(--color-correct), 0 0 1ch var(--color-correct);
+    }
+}
+
+.misplaced {
+    &::after {
+        background-color: var(--color-misplaced);
+        box-shadow: 0 0 .5ch var(--color-misplaced), 0 0 1ch var(--color-misplaced);
+    }
+}
+
+.incorrect {
+    &::after {
+        background-color: var(--color-incorrect);
+        box-shadow: 0 0 .5ch var(--color-incorrect), 0 0 1ch var(--color-incorrect);
+    }
+}
