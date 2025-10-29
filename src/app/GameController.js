@@ -54,7 +54,7 @@ export class GameController {
     }
 
     lose() {
-        this.state.set('Perdu, le code était :', this.code.join(''));
+        this.state.set('Perdu, le code était : ' + this.code.join(''));
         this.timer.running = false;
         codeInputEl.disabled = true;
         for (const btn of keypadBtnEls) { btn.disabled = true; }
@@ -121,4 +121,5 @@ function playExplosions() {
             explosion.remove();
         });
     }
+
 }
