@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Code</title>
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+    <script type="module" src="./dist/app.js"></script>
+</head>
+
+<body>
+    <noscript>
+        <div style="color: red; font-weight: bold; text-align: center; margin: 2em;">
+            Attention : JavaScript doit être activé pour utiliser ce site.
+        </div>
+    </noscript>
+    <div id="app"></div>
+</body>
+
+<script>
+    window.location.pathname == "/index.html" && window.location.replace("/");
+    document.addEventListener('DOMContentLoaded', () => {
+        const app = document.getElementById('app');
+        app && (async () => app.innerHTML = await fetch('./src/app.html').then(res => res.text()))();
+    });
+</script>
+
+</html>

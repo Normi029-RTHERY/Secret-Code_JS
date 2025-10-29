@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "name": "projet1_secretcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "Romain Théry"
+}
