@@ -5,3 +5,5 @@ Branche TS : Début de refactoring en Typescrpit. En bonne voie mais abandonné 
 Branche Shoeresizer : Défi Bonus 2
 
 Branche Colorpicker : Défi Bonus 3
+
+Branche Vercel : inutilisée
