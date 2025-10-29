@@ -1,4 +1,4 @@
-A utiliser avec lIveServer
+A utiliser avec LiveServer
 
 Branche dev : Projet Secret Code principal
 
